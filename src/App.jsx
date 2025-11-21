@@ -2,6 +2,8 @@ import './App.css'
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Card from "./components/Card";
+import SalesChart from "./components/SalesChart";
+
 
 function App() {
 
@@ -19,6 +21,11 @@ function App() {
               <Card title="Usuários" value="1.239" icon="users" />
               <Card title="Conversões" value="3.2%" icon="trending-up" />
           </section>
+
+          <section className="mt-6">
+              <SalesChart />
+          </section>
+
 
         </main>
 
