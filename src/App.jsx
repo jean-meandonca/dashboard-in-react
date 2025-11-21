@@ -7,7 +7,7 @@ function App() {
 
   return (
       <div className="flex h-screen">
-
+      
         <Sidebar/>
 
         <main className="flex-1 bg-gray-100 p-6">
@@ -15,9 +15,9 @@ function App() {
           <Header/>
 
           <section>
-              <Card title="Vendas" value="R$ 12.450" />
-              <Card title="Usuários" value="1.239" />
-              <Card title="Conversões" value="3.2%" />
+              <Card title="Vendas" value="R$ 12.450" icon="shopping-cart" />
+              <Card title="Usuários" value="1.239" icon="users" />
+              <Card title="Conversões" value="3.2%" icon="trending-up" />
           </section>
 
         </main>
