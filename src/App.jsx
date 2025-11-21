@@ -1,15 +1,18 @@
 import './App.css'
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
-import Card from "./components/Card";
-import SalesChart from "./components/SalesChart";
+import Home from "./pages/Home";
+import Analytics from "./pages/Analytics";
+import Settings from "./pages/Settings";
 
 
 function App() {
    const [sidebarOpen, setSidebarOpen] = useState(true);
 
   return (
+    <Router>
       <div className="flex h-screen">
       
         <Sidebar open={sidebarOpen} />
@@ -18,20 +21,16 @@ function App() {
 
           <Header toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
 
-          <section>
-              <Card title="Vendas" value="R$ 12.450" icon="shopping-cart" />
-              <Card title="Usuários" value="1.239" icon="users" />
-              <Card title="Conversões" value="3.2%" icon="trending-up" />
-          </section>
-
-          <section className="mt-6">
-              <SalesChart />
-          </section>
-
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/analytics" element={<Analytics/>} />
+            <Route path="/settings" element={<Settings/>}/>
+          </Routes>
 
         </main>
 
-    </div>
+      </div>
+    </Router>
   );
 }
 
