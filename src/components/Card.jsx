@@ -1,3 +1,4 @@
+import "./Card.css";
 import { ShoppingCart, Users, TrendingUp } from "lucide-react";
 
 export default function Card({ title, value, icon }) {
@@ -8,12 +9,12 @@ export default function Card({ title, value, icon }) {
   };
 
   return (
-    <div className="p-6 bg-white shadow rounded-xl flex items-center gap-4">
-      <div className="text-blue-600">
+    <div className="card-container">
+      <div className="card-icon">
         {icons[icon]}
       </div>
 
-      <div>
+      <div className="card-texts">
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="text-3xl font-bold">{value}</p>
       </div>

@@ -1,0 +1,15 @@
+.sales-table th,
+.sales-table td {
+  text-align: left !important;
+  padding-left: 16px;  
+  padding-right: 16px;  
+}
+
+.sales-table th {
+  font-weight: 600;
+}
+
+.sales-table td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

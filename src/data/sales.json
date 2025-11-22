@@ -1,0 +1,10 @@
+{
+  "monthlySales": [
+    { "name": "Jan", "value": 400 },
+    { "name": "Fev", "value": 800 },
+    { "name": "Mar", "value": 600 },
+    { "name": "Abr", "value": 1200 },
+    { "name": "Mai", "value": 900 },
+    { "name": "Jun", "value": 1500 }
+  ]
+}

@@ -13,7 +13,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex h-screen">
+      <div className="flex min-h-screen">
       
         <Sidebar open={sidebarOpen} />
 
