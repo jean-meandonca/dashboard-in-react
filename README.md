@@ -1,16 +1,22 @@
-# React + Vite
+# Dashboard React – Projeto de Estudo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dashboard construído em React**, criado do zero para estudar organização, componentes, navegação e como deixar uma interface mais próxima de algo usado no dia a dia.
 
-Currently, two official plugins are available:
+## Tecnologias usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite + React** — para um ambiente rápido e moderno
+- **Tailwind CSS** — estilização baseada em utilitários
+- **React Router** — controle de rotas (Home / Analytics)
+- **Recharts** — gráficos bonitos e simples de configurar
+- **JSON + fetch** — usamos arquivos `.json` como um “mini backend” fake
 
-## React Compiler
+## O dashboard contém
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Sidebar fixa com navegação
+- Header com botão de abrir/fechar o menu
+- Cards com ícones para métricas rápidas
+- Gráfico de vendas usando Recharts
+- Tabela de vendas recentes
+- Carregamento de dados reais (via JSON e fetch), como se fosse uma API
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
