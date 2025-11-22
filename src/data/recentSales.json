@@ -1,0 +1,6 @@
+[
+  { "id": 1, "client": "João Alves", "amount": 450.20, "date": "2025-01-10" },
+  { "id": 2, "client": "Maria Ferreira", "amount": 1299.99, "date": "2025-01-11" },
+  { "id": 3, "client": "Carlos Silva", "amount": 230.00, "date": "2025-01-12" },
+  { "id": 4, "client": "Ana Paula", "amount": 890.50, "date": "2025-01-13" }
+]
